@@ -13,7 +13,7 @@
   
   - name: install nodejs
     ansible.builtin.package:
-      name: nodejs
+      name: "{{ item }}"
       state: present
     loop:
     - nodejs
