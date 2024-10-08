@@ -9,6 +9,7 @@
     ansible.builtin.pip:
       name:
       - pyMysql
+      - cryptography
       executable: pip3.9
   - name: install mysql-server
     ansible.builtin.package:
